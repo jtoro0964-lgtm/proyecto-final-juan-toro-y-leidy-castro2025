@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./static/css/carrito.css"><!-- carrito.css -->
+</head>
+<body>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #ff3b3b;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ff3b3b;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            background: url('https://motos-suzuki.com/wp-content/uploads/2025/11/GSX-R-600_1920x750_Artboard-2.webp');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 0 10px black;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .contenido {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .moto-card {
+            background: #222;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #ff3b3b;
+            transition: 0.3s;
+        }
+
+        .moto-card:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ff3b3b;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #cc2f2f;
+        }
+    </style>
+</head>
+<body>
+
+<header>MotoRápida</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+    <h1>Velocidad, Estilo y Libertad</h1>
+</section>
+
+<footer id="contacto">
+    MotoRápida © 2025 – Página creada por juan toro y leidy castro 
+</footer>
+
+
+
+
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Carrito</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="motos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Motos</button>
+                    </li>
+                    <li>
+                        <button id="cascos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Cascos</button>
+                    </li>
+                    <li>
+                        <button id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Accesrios</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html"><!-- carrito.html -->
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 22025 Todos los derechos reservados de Juan Toro y Leidy Castro</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con código JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="./static/js/main.js"></script><!-- main.js -->
+</body>
+</html>
